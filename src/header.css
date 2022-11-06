@@ -1,0 +1,258 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/*  CSS Reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* 시작 */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap');
+
+body {
+    margin : 0;
+    background-color: #f8f8f8;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    width: 100%;
+    height: 50px;
+    display: flex ;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #333333;
+    border-bottom: 1px solid #e1e2e3;
+    position: fixed;
+    top: 0;
+    background-color: #ffffff;
+    z-index: 100;
+
+    
+}
+.header_child1 {
+    height: 50px ;
+    width: 1060px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+.header_child1 div {
+    display: flex;
+    flex-direction: row;
+    flex-basis: auto;
+    font-size: 14px;
+    
+}
+
+.header_menu1{
+   padding: 10px 10px 10px 0px ;
+   height: 21px
+}
+
+#menu1_hamberger {
+    margin: 2px 15px 0px 0px;
+    height: 14px;
+    cursor: pointer;
+    
+}
+
+#menu1_logo img {
+    width: 75px;
+    height: 20px;
+    object-fit: contain;
+    object-position: top;
+    cursor: pointer;
+}
+
+
+.header_menu2 div{
+    padding: 15px ; 
+    font-size: 13px;
+    vertical-align: middle;
+    font-weight: 600;
+    display: inline-block;
+        
+}
+
+.header_menu2 em{
+    position:absolute;
+    top: 10px;
+    font-size: 10px;
+    color: blue;
+}
+
+.header_menu3 div{
+    padding: 10px 10px 10px 0px ;
+    font-size: 13px;
+    vertical-align: middle;
+    font-weight: 600;
+    line-height: 15px;
+    display: inline-block;
+}
+
+#menu3_search img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    object-position: top;
+    cursor: pointer;
+}
+
+#menu3_join button {
+    
+    font-size: 13px;
+    vertical-align: middle;
+    font-weight: 600;
+    display: inline-block;
+    border: none;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+#menu3_divider {
+    border: 0.1px solid #e1e2e3;
+    height: 10px;
+    padding: 0;
+    margin-right: 10px;
+    position: relative;
+    top: 15px;
+}
+
+
+
+#menu3_service {
+    margin-top: 4px;
+    padding: 0px 10px;
+    color: #666;
+    line-height: 30px;
+    height: 30px;
+    border: 1px solid #e1e2e3;
+    border-radius: 15px;
+    font-weight: 300;
+    font-size: 12px;
+   
+} 
+
+.dropdown-content {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 7%;
+    left: 14.5%;
+    font-size: 13px;
+    font-weight: 600;
+    width: 200px;
+    height: 90vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    text-align: left;
+    z-index: 100;
+}
+
+.dropdown-content span {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    word-wrap: break-word;
+    padding: 14px 10px 14px 15px;
+    cursor: pointer;
+    background-color: #ffffff;
+}
+
+.dropdown-content span:hover {
+    background-color: #f7f9fa;
+    color: #36f;
+}
+
+.dropdown-develope {
+    width: 675px;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    word-break: break-all;
+    position: fixed;
+    top:7%;
+    left: 27.5%;
+    font-size: 12px;
+    font-weight: 500;
+    background-color: #f7f9fa;
+}
+
+.dropdown-develope span {
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    padding: 14px 10px 14px 15px;
+    cursor: pointer;
+    background-color: #f7f9fa;
+
+}
+
+.dropdown-develope p {
+    margin-left: auto;
+    color: #333;
+    
+}
+
+.dropdown-develope span:hover {
+    background-color: #f7f9fa;
+    color: #36f;
+}
+
+
+
+

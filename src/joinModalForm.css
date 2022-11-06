@@ -1,0 +1,379 @@
+.join_form_background {
+    
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 101;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+
+.join_form {
+    width: 400px;
+    height: 650px;
+    box-sizing: border-box;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    background-color: #ffffff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    vertical-align: middle;
+    position: fixed;
+    left: 35%;
+    top: 7%;
+    z-index: 100;
+    
+}
+
+.join_form_contents {
+    width: 400px;
+    height: 800px;
+    box-sizing: border-box;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+}
+
+
+.join_form_header {
+    display: flex;
+    flex-direction: row;
+    width: 400px;
+    height: 54px;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: 600;
+    position: relative;
+    top: -2.5%;
+    
+}
+
+.join_form_header div:last-child img {
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.join_form_header button {
+    width: 24px;
+    height: 24px;
+    background-color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+.join_form_header div:last-child {
+    position: relative;
+    left: 30%;
+}
+
+.join_form_email {
+    width: 380px;
+    text-align: left;
+    position: relative;
+    top: -1.5%;
+    justify-content: center;
+    
+}
+
+.join_form_email span {
+    font-size: 14px;
+    font-weight: 400;
+    color: #666;
+    margin-left: 25px;
+}
+
+.join_form_email input {
+    width: 310px;
+    height: 45px;
+    border: 1px solid #e1e2e3;
+    background-color: #f2f4f7;
+    font-size: 15px;
+    color: #333;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+
+}
+
+.join_form_name {
+    width: 380px;
+    text-align: left;
+    position: relative;
+    top: 2%;
+    justify-content: center;
+    
+}
+
+.join_form_name span {
+    font-size: 14px;
+    font-weight: 400;
+    color: #666;
+    margin-left: 25px;
+}
+
+.join_form_name input {
+    width: 310px;
+    height: 45px;
+    border: 1px solid #e1e2e3;
+    background-color: #ffffff;
+    font-size: 15px;
+    color: #333;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+
+}
+
+.join_form_digit {
+    width: 380px;
+    text-align: left;
+    position: relative;
+    top: 5%;
+        
+}
+
+.join_form_digit span {
+    font-size: 14px;
+    font-weight: 400;
+    color: #666;
+    margin-left: 25px;
+}
+
+.join_form_digit select {
+    width: 340px;
+    height: 45px;
+    border: 1px solid #e1e2e3;
+    background-color: #ffffff;
+    font-size: 15px;
+    color: #333;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: 25px;
+    padding-left: 15px;
+}
+
+.join_form_digit input {
+    width: 320px;
+    height: 45px;
+    border: 1px solid #e1e2e3;
+    background-color: #ffffff;
+    font-size: 15px;
+    color: #333;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: 25px;
+    padding-left: 15px;
+
+}
+
+.join_form_digit div {
+    width: 370px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.join_form_digit div>input {
+    width: 230px;
+    padding-left: 15px;
+}
+
+.join_form_digit div>button {
+    width: 115px;
+    height: 45px;
+    margin-left: 10px;
+    margin-top: 6px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: #ffffff;
+    color: #36f;
+    border: 1px solid #e1e2e3;
+    cursor: pointer;
+    
+}
+
+.join_form_digit div>button:disabled {
+    background-color: #f2f4f7;
+    color: #cacaca;
+}
+
+#join_form_digit_num {
+    margin-top: 5px;
+    background-color: #ffffff;
+}
+
+.join_form_digit div>button:disabled {
+    background-color: #f2f4f7;
+    color: #cacaca;
+}
+
+.join_form_password {
+    width: 380px;
+    text-align: left;
+    position: relative;
+    top: 8%;    
+}
+
+.join_form_password span {
+    font-size: 14px;
+    font-weight: 400;
+    color: #666;
+    margin-left: 25px;
+}
+
+.join_form_password input {
+    width: 320px;
+    height: 45px;
+    border: 1px solid #e1e2e3;
+    background-color: #ffffff;
+    font-size: 15px;
+    color: #333;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: 25px;
+    padding-left: 15px;
+
+}
+
+input:focus {
+    border: 1px solid #36f;
+    outline: none;
+}
+
+
+
+.join_form_password_confirm {
+    width: 380px;
+    text-align: left;
+    position: relative;
+    top: 7%;    
+}
+
+.join_form_password_confirm input {
+    width: 320px;
+    height: 45px;
+    border: 1px solid #e1e2e3;
+    background-color: #ffffff;
+    font-size: 15px;
+    color: #333;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: 25px;
+    padding-left: 15px;
+
+}
+
+.join_form_password_confirm input:focus {
+    border: 1px solid #36f;
+    outline: none;
+}
+
+.join_form_password_confirm p {
+    width: 340px;
+    font-size: 10.5px;
+    color: #767676;
+    font-weight: 400;
+    margin-left: 25px;
+    word-break: break-all;
+    margin-top: 10px;
+}
+
+.join_form_agreement {
+    width: 340px;
+    text-align: left;
+    justify-content: left;
+    box-sizing: border-box;
+    position: relative;
+    top: 13%;
+    font-size: 15px;
+    color: #666;  
+    margin-left: 25px;
+}
+
+.join_form_agreement hr {
+    width: 340px;
+    margin-top: 20px;
+}
+
+.join_form_agreement div {
+    width: 340px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    font-size: 15px;
+    color: #939393;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.join_form_agreement div>button {
+    border: none;
+    background-color: #ffffff;
+    font-size: 13px;
+    color: #939393;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.join_button {
+    z-index: 100;
+}
+
+/* 회원가입하기 버튼 */
+.join_button button {
+    width: 370px;
+    height: 54px;
+    border-radius: 27px;
+    background-color: #f2f4f7;
+    font-size: 16px;
+    font-weight: 600;
+    color: #cacaca;
+    border: none;
+    cursor: pointer;
+}
+
+input::placeholder {
+    color: #939393;
+    font-weight: 500;
+}
+
+.errorMessageWrap {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    color: #ef0000;
+    font-size: 12px;
+    position: relative;
+    left: 7%;
+}
+
+.timeMessageWrap {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    color: #36f;
+    font-size: 12px;
+    position: relative;
+    left: 7%;
+    display: flex;
+    flex-direction: column;
+}
+

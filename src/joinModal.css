@@ -1,0 +1,236 @@
+.join_modal_background {
+    
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 101;
+    overflow: hidden;
+}
+
+
+.join_modal {
+    width: 400px;
+    height: 650px;
+    box-sizing: border-box;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    background-color: #ffffff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    position: fixed;
+    left: 35%;
+    top: 7%;
+    z-index: 100;
+    
+}
+
+
+.join_modal_header {
+    display: flex;
+    flex-direction: row;
+    width: 400px;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    margin-bottom: auto;
+    
+}
+
+
+.join_modal_header div:first-child img {
+    width: 70px;
+    height: 16px;
+    object-fit: contain;
+    object-position: top;
+    
+}
+
+.join_modal_header div:last-child img {
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.join_modal_header button {
+    width: 24px;
+    height: 24px;
+    background-color: #ffffff;
+    border: none;
+}
+
+.join_modal_header div:last-child {
+    position: relative;
+    left: 33%;
+}
+
+#title_close {
+    cursor: pointer;
+}
+
+.join_modal_title {
+    width: 400px;
+    text-align: center;
+    position: relative;
+    top: -15%;
+   
+}
+
+.join_modal_title h1 {
+    font-size: 26px;
+    font-weight: 600;
+    color: #333;
+    line-height: 1.5;
+   
+}
+
+.join_modal_title h2 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #666;
+    line-height: 1.5;
+    margin-top: 15px;
+}
+
+.join_modal_email {
+    width: 380px;
+    height: 101px;
+    justify-content: center;
+    padding-left: 20px;
+    position: relative;
+    top: -8%;
+}
+
+.join_modal_email span {
+    font-size: 14px;
+    font-weight: 400;
+    color: #666;
+    text-align: left;
+}
+
+.join_modal_email input {
+    width: 360px;
+    height: 45px;
+    border: 1px solid #e1e2e3;
+    background-color: #ffffff;
+    font-size: 15px;
+    color: #333;
+    border-radius: 5px;
+    margin-top: 10px;    
+
+}
+.join_modal_email input:focus {
+    border: 1px solid #3366ff;
+    outline: none;
+}
+
+.join_modal_email input:invalid {
+    border: 1px solid #ef0000;
+    outline: none;
+}
+
+.join_modal_email input:valid {
+    border: 1px solid #3366ff;
+    outline: none;
+}
+
+.errorMessageWrap {
+    margin-top: 15px;
+    color: #ef0000;
+    font-size: 12px;
+    margin-top: 15px;
+}
+
+.errorMessageWrap>div {
+    margin-top: 10px;
+}
+
+.join_modal_login {
+    position: relative;
+    top: -5%;
+}
+
+.join_modal_login button {
+    width: 370px;
+    height: 54px;
+    border-radius: 27px;
+    background-color: #3366ff;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+.join_modal_login button:disabled {
+    background-color: #dadada;
+    color: white;
+}
+
+.join_modal_login i {
+    margin-right: 10px;
+}
+
+.join_modal_login p {
+    font-size: 14px;
+    font-weight: 500;
+    color: #969696;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.join_modal_snslogin {
+    display: flex;
+    flex-direction: row;
+    width: 360px;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: -4%;
+
+}
+
+.join_modal_snslogin button {
+    width: 55px;
+    height: 55px;
+    border-radius: 28px;
+    margin-right: 23px;
+    padding: 0px 10px;
+    background-color: #ffffff;
+    border: none;
+    cursor: pointer;
+    
+}
+
+.join_modal_snslogin img {
+    width: 54px;
+    height: 54px;
+    border-radius: 28px;
+    object-fit: cover;
+    object-position: top;
+   
+}
+
+.join_modal_snslogin h3 {
+    font-size: 13px;
+    font-weight: 200;
+    color: #333;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.join_modal_footer {
+    width: 380px;
+    font-size: 11px;
+    text-align: center;
+    line-height: 18px;
+    color: #999;
+}
+

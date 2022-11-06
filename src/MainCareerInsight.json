@@ -1,0 +1,69 @@
+[
+    {   
+        "id" : 1,
+        "image" :"https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fwanted.video.kr.kollus.com%2Fkr%2Fsnapshot%2Fwanted%2F20210811%2F1%2F01781170.jpg&w=500&q=75",
+        "title" : "스타트업의 컬처 수립 전략 : Culture의 북극성 지표를 설정하는 법 - 이녹원",
+        "desciption" : "브랜디 'Culture deck'을 예시로 조직 문화를 고민한 과정의 결과물들을 공유합니다.현재 진행형으로 성장하는 스타트업의 사례를 통해, 스타트업의 문화를 고민하시는 다른 분들에게 도움이 되었으면 합니다.", 
+        "logo" : "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Ffavicon%2F144x144.png&w=60&q=90",
+        "writer" : "브랜디 이녹원"
+    
+    },
+    {
+        "id" : 2,
+        "image" :"https://image.wanted.co.kr/optimize?src=http%3A%2F%2Ft1.daumcdn.net%2Fbrunch%2Fservice%2Fuser%2FFCW%2Fimage%2Fzex2YeVYneoAzyD2Zqg4CvcQWVE&w=500&q=75",
+        "title" : "넷플릭스 문화의 오해와 진실",
+        "desciption" : "넷플릭스의 자유와 책임의 문화는 스타트업 씬에서는 워낙 유명헤서 모르는 사람이 없을 것이다. 대표적으로 업계 최고 임금으로 최고의 인재를 채용하는 방식, 무제한 자유로운 휴가 사용, 솔직한 피드백.. 등 넷플릭스의 문화는 넷플릭스의 오리지널 콘텐츠만킁이나 유명하다.", 
+        "logo" : "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Ft1.daumcdn.net%2Fbrunch%2Fstatic%2Ficon%2Fios%2Ficon120.png&w=60&q=90",
+        "writer" : "장한솔"
+    },
+    {
+        "id" : 3,
+        "image" :"https://image.wanted.co.kr/optimize?src=http%3A%2F%2Ft1.daumcdn.net%2Fbrunch%2Fservice%2Fuser%2F1Wwt%2Fimage%2FtmccpPhE-yOaNv8LAjmZ_dLStK0.JPG&w=500&q=75",
+        "title" : "자신의 한계를 뛰어넘는 비법",
+        "desciption" : "마지막 몰입 이 책의 저자는 짐 퀵입니다. 빌 게이츠, 윌 스미스, 스탠 리, 노박 조코비치 등 25년 넘게 정치, 스포츠, 연예계 수많은 사람들의 잠재력을 깨워준 브레인 코리하고 해요. 기업이나 대학뿐만 아니라 백악관에서도 강연을 하는 그런 인물입니다. 엄청난 사람이죠? 그런데 짐 퀵은 대학에 들어갈 때까지 책 한권을 끝까지 읽기도 힘들었다고 합니다.", 
+        "logo" : "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Ft1.daumcdn.net%2Fbrunch%2Fstatic%2Ficon%2Fios%2Ficon120.png&w=60&q=90",
+        "writer" : "장영학"
+    },
+    {
+        "id" : 4,
+        "image" :"https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fwanted.video.kr.kollus.com%2Fkr%2Fsnapshot%2Fwanted%2F20210923%2F0%2F45334709.jpg&w=500&q=75",
+        "title" : "뉴노멀 시대 HR의 진화,혹은 진보: 디지털 기술의 활용과 신뢰형성 - 권도영",
+        "desciption" : "코로나 이후 뉴노멀은 '비대면의 일상화'와 '디지털 전환'으로 요약되고, 시대적 적응을 위해 '디지털 기술의 적극적 활용'과 '문화적 변화'로 HR의 진화를 요구합니다. 이에 대한 최근 사례들을 살펴보며 아이디어를 나누고, 언제나처럼 핵심은 신뢰에 있음을 깨닫습니다.", 
+        "logo" : "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Ffavicon%2F144x144.png&w=60&q=90",
+        "writer" : "데브캣 권도영"
+    },
+    {
+        "id" : 5,
+        "image" :"https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fwanted.video.kr.kollus.com%2Fkr%2Fsnapshot%2Fwanted%2F20210907%2F8%2F73349991.jpg&w=500&q=75",
+        "title" : "임직원과 가까워지는 사내 소통의기술 - 이선민",
+        "desciption" : "코로나 시대에 더 중요해진 사내 소통, 어떻게 하고 계신가요?문화 개선을 고민하는 담당자는 어떻게 임직원과 소통할지 고민이 많으실 텐데요, 문화 개선의 핵심이 될 수 있는 사내 소통의 기술! 임직원의 관심을 유도하고 효과적으로 소통할 수 있는 노하우, 이번 강의에서 공유해 드릴게요..", 
+        "logo" : "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Ffavicon%2F144x144.png&w=60&q=90",
+        "writer" : "한국타이어앤테크놀로지 이선민"
+    },
+    {
+        "id" : 6,
+        "image" :"https://image.wanted.co.kr/optimize?src=http%3A%2F%2Ft1.daumcdn.net%2Fbrunch%2Fservice%2Fuser%2F1Wwt%2Fimage%2FWd8xM1-8gkZRFgzo3104XSaNTFo.jpg&w=500&q=75",
+        "title" : "나에게 맞는 자리는 어디일까",
+        "desciption" : "이 책의 저자는 야마구치 슈입니다. 구스노키 겐과의 대담집인 '일을 잘한다는 것', 그 전에는 '철학은 어떻게 삶의 무기가 되는가'가 베스트셀러로 올라서 이제는 한국에서도 많이 알려진 것 같습니다. 광고회사 덴쓰에서 커리어를 시작했고, 보스턴컬설팅그룹, AI커니, 콘페이헤이그룹에서 컨설턴트 생활을 했습니다. 지금은 독립 컨설팅 회사 라이프니츠랩 대표이자 히", 
+        "logo" : "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Ft1.daumcdn.net%2Fbrunch%2Fstatic%2Ficon%2Fios%2Ficon120.png&w=60&q=90",
+        "writer" : "장영학"
+    },
+    {
+        "id" : 7,
+        "image" :"https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fwanted.video.kr.kollus.com%2Fkr%2Fsnapshot%2Fwanted%2F20210907%2F8%2F12678375.jpg&w=500&q=75",
+        "title" : "끝나지 않는 코로나, 비대면 조직문화 활성화를 위한 과제 - 송창용",
+        "desciption" : "코로나 19의 충격파는 이미 20세기 초 세계 대공황을 넘어선지 오래입니다. 비대면 상황에서도 나름의 길을 찾아가고 있는 조직문화 형성의 현주소를 살펴보고 조직문화 담당자가 앞으로 해결해야 할 과제와 놓치지 않아야 할 것은 무엇인지 알아보고자 합니다.", 
+        "logo" : "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Ffavicon%2F144x144.png&w=60&q=90",
+        "writer" : "이노션월드와이드 송창용"
+    },
+    {
+        "id" : 8,
+        "image" :"https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fwanted.video.kr.kollus.com%2Fkr%2Fsnapshot%2Fwanted%2F20210923%2F0%2F26269224.jpg&w=500&q=75",
+        "title" : "패널토론 : 코로나 19를 넘어서는 HRD와 조직문화 설계하기 - 안성희, 이지후, 권도영, 김다예",
+        "desciption" : "코로나19로 인해 HR 담당자들의 업무에는 어떤 변화가 있었을까요? 코로나 19를 넘어서는 HRD와 조직문화 설계와 관련된 다양한 질문에 대한 해답을 영상을 통해 확인해보세요!", 
+        "logo" : "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Ffavicon%2F144x144.png&w=60&q=90",
+        "writer" : "KT&G 안성희,LS미래원 이지후, 데브캣 권도영, 스마일게이트 홀딩스 김다예"
+    }
+]
+
+

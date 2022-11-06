@@ -1,0 +1,163 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/*  CSS Reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* 시작 */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap');
+
+.footer {
+    height: 245px;
+    padding: 18px 0px 65px;    
+    border-top: 1px solid #e1e2e3;
+    font-family: 'Noto Sans KR', sans-serif;
+    bottom: auto;
+}
+
+#foot_con1 {
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 15%;    
+}
+
+#foot_con1_nav {
+    width: 500px;
+    margin-top: 0.7%;
+    display: flex;
+    flex-direction: row;
+}
+
+#foot_con1_nav h3 {
+    margin-left: 10%;
+    color: #3a3a3a;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+#foot_con1_sns {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 1;
+    margin-left: 15%;
+}
+
+#foot_con1_sns div {
+    padding: 6px;
+}
+
+#foot_con2 {
+    display: flex;
+    flex-direction: row;
+    height: 86px;
+    margin-top: 2%;
+}
+
+#foot_con2_address {
+    height: 60px;
+    margin-left: 15%;
+}
+
+#foot_con2_address p {
+    font-size: 12px;
+    color: #767676;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
+#foot_con1_finishline {
+    width: 1080px;
+    border: 1px solid #e1e2e3;
+    border-style: solid none none;
+    margin-top: 2%;
+    margin-left: 15%;
+}
+
+#foot_con2_lan {
+    width: 250px;
+    height: 40px;
+    background-color: #f2f4f7;
+    border-radius: 5px;
+    margin-left: 4%;
+    display: flex;
+    flex-direction: row;
+}
+
+#foot_con2_lan img {
+    width: 24px;
+    height: 17px;
+    object-fit: cover;
+    object-position: top;
+    margin-top: 12px;
+    margin-left: 20px;
+}
+
+#foot_con2_lan select {
+    background-color: #f2f4f7;
+    border: none;
+    appearance: none;
+    font-size: 14px;
+    font-weight: 600;
+    color: #717171;
+    position: relative;
+    margin-left: 5px;
+
+}
+
+#foot_con2_lan span {
+    margin-left: 15%;
+    margin-top: 7px;
+}
+
+/* body 스크롤 방지용 */
+
+.stop-scroll {
+    height: 100%;
+    overflow: hidden;
+}

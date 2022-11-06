@@ -1,25 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./index.css";
+// import "./joinModal.css";
+// import "./joinModalForm.css";
+import Header from "./header";
+import Footer from "./footer";
+import MainPage from "./mainPage.js";
+import {Route, Routes} from 'react-router-dom';
+import Recruit from "./recruit";
+import RecruitNotice from "./recruitNotice";
+import RecruitBlueBeaker from "./recruitBluebeaker";
+import Search from "./search";
+import SearchDetail from "./searchDetail";
 
-function App() {
+
+
+const App = () => {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    <>
+    
+      <Header />
+      <Routes>
+        <Route path="/" element={<MainPage />}></Route>
+        <Route path="/recruit" element={<Recruit />}></Route>
+        <Route path="/developeAll" element={<RecruitNotice />}></Route>
+        <Route path="/developeAll/:id" element={<RecruitBlueBeaker />}></Route>
+        <Route path="/search" element={ <SearchDetail  />}></Route>
+      </Routes>
+      <Footer />
+        
+    </>
+  )
+ 
+
+} 
 
 export default App;

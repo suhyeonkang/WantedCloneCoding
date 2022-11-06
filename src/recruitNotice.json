@@ -1,0 +1,209 @@
+ {
+ "company":
+ [
+    {
+        "id" : "0",
+        "mainImg" : "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F79%2Fno3ey0e5mjbismfq__400_400.jpg&w=400&q=75",
+        "logo" : "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fwdes%2F0_5.cc473dbf.jpg&w=100&q=75",
+        "companyName" : "원티드랩",
+        "numPosition" : "18개 포지션"
+    },
+
+    {
+        "id" : "1",
+        "mainImg" : "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F25912%2Feu3nk4q7gb3xdn2i__400_400.png&w=400&q=75",
+        "logo" : "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fwdes%2F0_5.cc4f3409.jpg&w=100&q=75",
+        "companyName" : "데이터라이즈",
+        "numPosition" : "2개 포지션"
+
+    },
+
+    {
+        "id" : "2",
+        "mainImg" : "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F15034%2Ftv3bh6il0v9bvn2o__400_400.jpg&w=400&q=75",
+        "logo" : "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fwdes%2F0_5.7bbdad8f.jpg&w=100&q=75",
+        "companyName" : "피트릭스",
+        "numPosition" : "1개 포지션" 
+    },
+
+    {
+        "id" : "3",
+        "mainImg" : "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F8487%2F3e6nnlaufiptbxot__400_400.jpg&w=400&q=75",
+        "logo" : "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fwdes%2F0_5.f44c5107.jpg&w=100&q=75",
+        "companyName" : "엔터플",
+        "numPosition" : "6개 포지션" 
+
+    },
+
+    {
+        "id" : "4",
+        "mainImg" : "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F31271%2Fpgonpztecjecnkse__400_400.jpg&w=400&q=75",
+        "logo" : "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fwdes%2F0_5.ddb2c630.jpg&w=100&q=75",
+        "companyName" : "남도마켓",
+        "numPosition" : "3개 포지션"  
+    }
+],
+
+    "recruitList":[
+        {
+            "id" : "0",
+            "mainImg" : "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F22333%2Feh1mycy7nnltf5ah__400_400.jpg&w=400&q=75",
+            "title" :"웹 프론트엔드 개발자(React)",
+            "companyName" : "블루비커",
+            "response" : "응답률 매우 높음",
+            "location" : "서울·한국",
+            "reward" : "채용보상금"
+
+        },
+        {
+            "id" : "1",
+            "mainImg" : "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F15001%2Frlevmevn1jkftss2__400_400.jpg&w=400&q=75",
+            "title" :"Multimedia SW개발(Camera, Audio 등)",
+            "companyName" : "썬더소프트코리아",
+            "response" : "응답률 매우 높음",
+            "location" : "경기·한국",
+            "reward" : "채용보상금 "
+
+        },
+        {
+            "id" : "2",
+            "mainImg" : "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F11515%2Fi9k8el8bmdbdcejq__400_400.jpg&w=400&q=75",
+            "title" :"데이터 엔지니어 / Python specialist (신입가능)",
+            "companyName" : "수성엔지니어링",
+            "response" : "응답률 매우 높음",
+            "location" : "서울·한국",
+            "reward" : "채용보상금 "
+
+        },
+        {
+            "id" : "3",
+            "mainImg" : "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F14882%2Fifx1nttlhrf9nnir__400_400.jpg&w=400&q=75",
+            "title" :"QA/테스트 엔지니어",
+            "companyName" : "아바티(AVATYE)",
+            "response" : "응답률 매우 높음",
+            "location" : "경기·한국",
+            "reward" : "채용보상금 "
+
+        },
+        {
+            "id" : "4",
+            "mainImg" : "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F13152%2Fwmppturqz9kuz3ty__400_400.jpg&w=400&q=75",
+            "title" :"[CB개발실] 웹 서비스 개발자(전문 계약직)",
+            "companyName" : "나이스평가정보",
+            "response" : "응답률 매우 높음",
+            "location" : "서울·한국",
+            "reward" : "채용보상금 "
+
+        },
+        {
+            "id" : "5",
+            "mainImg" : "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F20249%2Fhwtjq0hvt6ntchpm__400_400.jpg&w=400&q=75",
+            "title" :"C/C++,C# 소프트웨어(임베디드리눅스 개발자)",
+            "companyName" : "아르고스다인",
+            "response" : "응답률 매우 높음",
+            "location" : "경기·한국",
+            "reward" : "채용보상금 "
+
+        },
+        {
+            "id" : "6",
+            "mainImg" : "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F22152%2Fzfcvnwqkqwrddima__400_400.png&w=400&q=75",
+            "title" :"머신러닝 엔지니어",
+            "companyName" : "비팩토리(B Factory)",
+            "response" : "응답률 매우 높음",
+            "location" : "서울·한국",
+            "reward" : "채용보상금 "
+
+        },
+        {
+            "id" : "7",
+            "mainImg" : "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F14882%2Fifx1nttlhrf9nnir__400_400.jpg&w=400&q=75",
+            "title" :"[신사업]프런트엔드 개발자(Frontend Developer)",
+            "companyName" : "엠알피소프트",
+            "response" : null,
+            "location" : "서울·한국",
+            "reward" : "채용보상금 "
+
+        },
+        {
+            "id" : "8",
+            "mainImg" : "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F13152%2Fwmppturqz9kuz3ty__400_400.jpg&w=400&q=75",
+            "title" :"[신사업] 백엔드 개발자(Backend Developer)",
+            "companyName" : "엠알피소프트",
+            "response" : "",
+            "location" : "서울·한국",
+            "reward" : "채용보상금 "
+
+        },
+        {
+            "id" : "9",
+            "mainImg" : "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F30995%2Fst2m8xqfjf3sklzc__400_400.jpg&w=400&q=75",
+            "title" :"[분당] 광고플랫폼 QA 프로젝트 리더",
+            "companyName" : "이노아이",
+            "response" : "응답률 매우 높음",
+            "location" : "경기·한국",
+            "reward" : "채용보상금 "
+
+        },
+        {
+            "id" : "10",
+            "mainImg" : "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F13927%2Fv0j9sfnmepcq43xn__400_400.jpg&w=400&q=75",
+            "title" :"VR 영상솔루션 어플리케이션 개발자",
+            "companyName" : "알파서클",
+            "response" : "응답률 매우 높음",
+            "location" : "경기·한국",
+            "reward" : "채용보상금 "
+
+        },
+        {
+            "id" : "11",
+            "mainImg" : "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F19354%2Fowem5orct9sdcmam__400_400.jpg&w=400&q=75",
+            "title" :"프론트앤드 개발자 - Vue.js (3년이상)",
+            "companyName" : "드림인사이트",
+            "response" : "응답률 매우 높음",
+            "location" : "서울·한국",
+            "reward" : "채용보상금 "
+
+        },
+        {
+            "id" : "12",
+            "mainImg" : "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F32837%2Fr17way7wkbn07mxm__400_400.jpg&w=400&q=75",
+            "title" :"스마트컨트랙트 개발자 (Golang)",
+            "companyName" : "온블록",
+            "response" : "응답률 매우 높음",
+            "location" : "서울·한국",
+            "reward" : "채용보상금 "
+
+        },
+        {
+            "id" : "13",
+            "mainImg" : "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F24827%2Fsfygensszfn8g8gt__400_400.jpg&w=400&q=75",
+            "title" :"iOS 개발자 (iOS Developer)",
+            "companyName" : "다큐브(daquv)",
+            "response" : "응답률 매우 높음",
+            "location" : "서울·한국",
+            "reward" : "채용보상금 "
+
+        },
+        {
+            "id" : "14",
+            "mainImg" : "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F15488%2Fwnwvaldylogadur6__400_400.jpg&w=400&q=75",
+            "title" :"DBA(데이터베이스관리자)",
+            "companyName" : "쥬비스다이어트",
+            "response" : "응답률 매우 높음",
+            "location" : "서울·한국",
+            "reward" : "채용보상금 "
+
+        },
+        {
+            "id" : "15",
+            "mainImg" : "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F33258%2F2ndaiiurzpxktqnd__400_400.jpg&w=400&q=75",
+            "title" :"ASP.NET Core 백엔드 개발자",
+            "companyName" : "클라우드호스피탈",
+            "response" : "응답률 매우 높음",
+            "location" : "서울·한국",
+            "reward" : "채용보상금 "
+
+        }
+    ]
+}
