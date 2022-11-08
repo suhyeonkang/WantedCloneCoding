@@ -131,25 +131,27 @@
     outline: none;
 }
 
-.join_modal_email input:invalid {
+/* .join_modal_email input:invalid {
     border: 1px solid #ef0000;
     outline: none;
-}
+} */
 
 .join_modal_email input:valid {
     border: 1px solid #3366ff;
     outline: none;
 }
 
-.errorMessageWrap {
+.errorMessageWrap1 {
     margin-top: 15px;
     color: #ef0000;
     font-size: 12px;
-    margin-top: 15px;
+    
 }
 
-.errorMessageWrap>div {
+.errorMessageWrap1 >div {
     margin-top: 10px;
+    position: relative;
+  
 }
 
 .join_modal_login {

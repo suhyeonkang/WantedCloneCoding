@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from "react";
+import { useNavigate } from "react-router-dom";
 import "./joinModal.css";
 import JoinModalForm from "./joinModalForm";
 
@@ -42,6 +43,7 @@ const JoinModal = (props) => {
     
     const openJoinForm = () => {
         setFormOpen(true);
+        
     };
 
     return (
@@ -62,11 +64,13 @@ const JoinModal = (props) => {
             <div class="join_modal_email">
                 <span>이메일</span><br/>
                 <input 
+                    type= "text"
                     placeholder=" 이메일을 입력해 주세요." 
                     onChange={handleEmail} 
                     value={email}
-                    pattern={regex}/>
-                <div class="errorMessageWrap">
+                    pattern={regex} 
+                    />
+                <div class="errorMessageWrap1">
                 {!emailValid && email.length > 0 && (
                 <div>올바른 이메일을 입력해주세요.</div>
                 )}
@@ -93,7 +97,7 @@ const JoinModal = (props) => {
         </div>
         ) : null }
         
-        {formOpen ? <JoinModalForm formOpen={formOpen} setFormOpen={setFormOpen} email={email} /> : null}
+        {formOpen ? <JoinModalForm formOpen={formOpen} setFormOpen={setFormOpen} email={email} modalOpen={modalOpen} setModalOpen={setModalOpen} /> : null}
         </>
     )
 }
