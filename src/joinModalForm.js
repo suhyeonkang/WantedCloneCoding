@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import "./joinModalForm.css";
 
 const JoinModalForm = (props) => {
 
-    const {formOpen, setFormOpen, email} = props;
+    const {formOpen, setFormOpen, email, modalOpen, setModalOpen} = props;
     
     const [tel, setTel] = useState('');
     const [telValid, setTelValid] = useState(false);
@@ -22,8 +22,16 @@ const JoinModalForm = (props) => {
     const [checked2, setChecked2] = useState(false);
     const [checkedAll, setCheckedAll] = useState(false);
 
-    const [time, setTime] = useState('');
+    const [time, setTime] = useState(0);
     const [timerStart, setTimerStart] = useState(false);
+    const savedCallback = useRef();
+    let min;
+    let sec;
+
+    const [joinNotAllow, setJoinNotAllow] = useState(true);
+
+
+    // 인증번호 유효시간 타이머 
 
     const Timer = () => {
         setTime(299);  
@@ -31,16 +39,31 @@ const JoinModalForm = (props) => {
         setCertNotAllow(false);
     }
 
+    const callback = () => {
+        
+        if(time > 0){
+         setTime(time-1);
+        }
+        
+    }
+
     useEffect(()=> {
-        const timer = setInterval(() => {
-            setTime(time-1);
-        }, 1000);
-        console.log(time)
-        return () => clearInterval(timer);
-    }, [time, timerStart]);
+        savedCallback.current = callback;
+    });
+
+    useEffect(()=> {
+
+        const tick =() => {
+            savedCallback.current();
+        }
+        
+        const timer = setInterval(tick,1000);
+         return () => clearInterval(timer);
+        
+    }, []);
 
     
-    
+    // 전화번호 유효성 체크 
 
     const handleTel = (e) => {
         setTel(e.target.value);
@@ -53,6 +76,8 @@ const JoinModalForm = (props) => {
         }
     };
 
+    // 비밀번호 유효성 체크 
+
     const handlePw = (e) => {
         setPw(e.target.value);
         if(regex_pw.test(e.target.value)){
@@ -61,6 +86,8 @@ const JoinModalForm = (props) => {
             setPwValid(false);
         }
     }
+
+    // 비밀번호 확인 유효성 체크
 
     const matchPw = (e) => {
         setRePw(e.target.value);
@@ -71,6 +98,8 @@ const JoinModalForm = (props) => {
         }
 
     }
+
+    // 동의 사항 체크 부분
 
     const handleChkAll = (e) => {
         if(!checked1 && !checked2){
@@ -117,9 +146,22 @@ const JoinModalForm = (props) => {
     useEffect(()=> {
        reverseChkAll();
     },[checked1, checked2]);
+
+    // 회원가입 폼 모두 입력, 검증 완료 시 회원 가입 버튼 활성화
+
+    const handleJoin = () => {
+        if(!telNotAllow && !certNotAllow && pwValid && matchPwValid && checkedAll){
+            setJoinNotAllow(false);
+        }
+    };
+
+    useEffect(() => {
+        handleJoin();
+    }, [telNotAllow, certNotAllow, pwValid, matchPwValid, checkedAll]);
             
     const formClose = () => {
         setFormOpen(false);
+        setModalOpen(false);
 
     };
     
@@ -167,11 +209,12 @@ const JoinModalForm = (props) => {
                             )}
                         </div>
                         <input id="join_form_digit_num" placeholder="인증번호를 입력해 주세요." disabled={certNotAllow}/>
+                        {timerStart && (<span>인증번호 확인</span>)}
                         <div class="timeMessageWrap">
                             {timerStart  && (
                             <>
                             <div>인증번호가 요청되었습니다.</div>
-                            <div>유효시간 {time}</div>
+                            <div>유효시간 {parseInt(time/60)}분 {time%60}초</div>
                             </>
                             )}
                         </div>   
@@ -213,7 +256,7 @@ const JoinModalForm = (props) => {
                     </div>
             
                 <div class="join_button">
-                    <button disabled> 회원가입하기 </button>
+                    <button disabled={joinNotAllow}> 회원가입하기 </button>
                 </div>
                 </div>    
             </div>

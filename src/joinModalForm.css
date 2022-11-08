@@ -222,6 +222,17 @@
     background-color: #ffffff;
 }
 
+#join_form_digit_num+span {
+    color: #36f;
+    font-size: 14px;
+    font-weight: 700;
+    position: relative;
+    left: 64%;
+    top: -34px;
+    cursor: pointer;
+
+}
+
 .join_form_digit div>button:disabled {
     background-color: #f2f4f7;
     color: #cacaca;
@@ -344,12 +355,17 @@ input:focus {
     width: 370px;
     height: 54px;
     border-radius: 27px;
-    background-color: #f2f4f7;
+    background-color: #36f;
     font-size: 16px;
     font-weight: 600;
-    color: #cacaca;
+    color: #fff;
     border: none;
     cursor: pointer;
+}
+
+.join_button button:disabled {
+    background-color: #dadada;
+    color: white;
 }
 
 input::placeholder {
@@ -363,7 +379,7 @@ input::placeholder {
     color: #ef0000;
     font-size: 12px;
     position: relative;
-    left: 7%;
+    left: 8%;
 }
 
 .timeMessageWrap {
