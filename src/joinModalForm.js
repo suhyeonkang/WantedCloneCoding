@@ -1,9 +1,13 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState, useRef} from "react";
 import "./joinModalForm.css";
+import {useSelector, useDispatch} from 'react-redux';
+import { loginOpen, joinOpen, modalClose, searchOpen, searchClose } from "./modules/modalStore";
 
 const JoinModalForm = (props) => {
 
-    const {formOpen, setFormOpen, email, modalOpen, setModalOpen} = props;
+    const modalOpen = useSelector(state => state.modalOpen);
+    const dispatch = useDispatch();
+    const email = props.email;
     
     const [tel, setTel] = useState('');
     const [telValid, setTelValid] = useState(false);
@@ -159,21 +163,16 @@ const JoinModalForm = (props) => {
         handleJoin();
     }, [telNotAllow, certNotAllow, pwValid, matchPwValid, checkedAll]);
             
-    const formClose = () => {
-        setFormOpen(false);
-        setModalOpen(false);
-
-    };
     
     return (
         <>
-            {formOpen ? ( 
+            {modalOpen > 1 ? ( 
             <div class="join_form_background">
                 <div class="join_form">
                     <div class="join_form_contents">
                         <div class="join_form_header">
                             <div>회원가입</div>
-                            <div><button id="form_close" onClick={formClose}><img src="./img/close_FILL1_wght400_GRAD0_opsz48.png" alt="close"/></button></div>
+                            <div><button id="form_close" onClick={()=> dispatch(modalClose())}><img src="./img/close_FILL1_wght400_GRAD0_opsz48.png" alt="close"/></button></div>
                         </div>
         
                         <div class="join_form_email">

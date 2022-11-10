@@ -2,10 +2,14 @@ import React, { useState, useRef, useEffect } from 'react';
 import "./search.css";
 import SearchDetail from "./searchDetail";
 import { useNavigate } from 'react-router-dom';
+import {useSelector, useDispatch} from 'react-redux';
+import { loginOpen, joinOpen, modalClose, searchOpen, searchClose } from "./modules/modalStore";
 
-const Search = (props) => {
+const Search = () => {
 
-    const {searchFilter, setSearchFilter} = props;
+    const searchFilter = useSelector(state => state.searchFilter);
+    const dispatch = useDispatch();
+
     const [searchTerm, setSearchTerm] = useState("");
     const navigate = useNavigate();
     const inputEl = useRef(null);
@@ -15,16 +19,14 @@ const Search = (props) => {
     }, []);
 
     
-    const closeSearchFilter = () => {
-        setSearchFilter(false);
-    };
+
 
     const linkToSearchDetail = (value) => {
         setSearchTerm(value);
         navigate('/search', {
             state: searchTerm,
         });
-        closeSearchFilter();
+        dispatch(searchClose());
     };
     
 
@@ -38,7 +40,7 @@ const Search = (props) => {
            <div class="search_bar">
             <img src="/img/search_icon.png" alt=""/>    
             <input type="search" placeholder="#태그,회사,포지션 검색" onChange={(e) => {setSearchTerm(e.target.value);}} onKeyPress={(e) => linkToSearchDetail(e.target.value)} ref={inputEl}/>
-            <img src="/img/close_FILL1_wght400_GRAD0_opsz48.png" alt="" onClick={closeSearchFilter}/>
+            <img src="/img/close_FILL1_wght400_GRAD0_opsz48.png" alt="" onClick={() => dispatch(searchClose())}/>
            </div>
            <div class="search_description">
                 <span>추천태그로 검색해보세요</span>
@@ -52,7 +54,7 @@ const Search = (props) => {
                 <button>#연봉상위2~5%</button>
            </div> 
         </div>
-        <div class="search_background" onClick={closeSearchFilter}> 
+        <div class="search_background" onClick={()=> dispatch(searchClose())}> 
         </div>
         </>
     

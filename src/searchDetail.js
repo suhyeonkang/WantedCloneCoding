@@ -4,7 +4,7 @@ import "./searchDetail.css";
 import contentsList from "./searchDetail.json";
 import styled from 'styled-components';
 
-const RecruitNotice = (props) => {
+const SearchDetail = (props) => {
 
     const state = useLocation();
     const searchTerm = state.state;
@@ -178,4 +178,4 @@ const StyledLink = styled(Link)`
 
     );
 };
-export default RecruitNotice;
+export default SearchDetail;

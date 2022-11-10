@@ -1,21 +1,26 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef} from "react";
 import {Outlet, Link} from "react-router-dom";
 import JoinModal from "./joinModal";
 import "./header.css";
 import Recruit from './recruit';
 import styled from 'styled-components';
 import Search from "./search";
+import {useSelector, useDispatch} from 'react-redux';
+import { loginOpen, joinOpen, modalClose, searchOpen, searchClose } from "./modules/modalStore";
+
+
+
 
 
 const Header = () => {
 
     // 회원가입 모달창 띄우는 부분
-    const [modalOpen, setModalOpen] = useState(false);
+    // 검색창 모달창 띄우는 부분
 
-    const openJoinModal = () => {
-        setModalOpen(true);
+    const modalOpen = useSelector(state => state.modalOpen);
+    const searchFilter = useSelector(state => state.searchFilter);
+    const dispatch = useDispatch();
 
-    };
     
     // 드롭다운 메뉴 hovering
     const [isHovering, setIsHovering] = useState(0);
@@ -41,19 +46,12 @@ const Header = () => {
         StyledLink3:visited {color: #333};
     `;
     
-    //검색창 
-
-    const [searchFilter, setSearchFilter] = useState(0);
-    const openSearchFilter = () => {
-        setSearchFilter(true);
-    };
-
 
     return(
         <>
-        <div class = "header">
-            <div class = "header_child1">
-                <div class="header_menu1">
+        <div className = "header">
+            <div className = "header_child1">
+                <div className="header_menu1">
                     
                     <div id="menu1_hamberger"
                         onMouseOver = {() => setIsHovering(true)}>
@@ -66,7 +64,7 @@ const Header = () => {
                         </Link>
                     </div>
                 </div>
-                <div class="header_menu2">
+                <div className="header_menu2">
                     <div><StyledLink to="/recruit">채용</StyledLink></div>
                     <div>이벤트</div>
                     <div>직군별 연봉</div>
@@ -75,15 +73,15 @@ const Header = () => {
                     <div>프리랜서</div>
                     <div>AI 합격예측<em>Beta</em></div>
                 </div>
-                <div class="header_menu3">
-                    <div id="menu3_search" onClick={openSearchFilter}><img src="/img/search_icon.png" alt=""/></div>
-                    <div id="menu3_join"><button id="menu3_join_btn" onClick={openJoinModal}>회원가입/로그인</button></div>
+                <div className="header_menu3">
+                    <div id="menu3_search" onClick={()=> dispatch(searchOpen())}><img src="/img/search_icon.png" alt=""/></div>
+                    <div id="menu3_join"><button id="menu3_join_btn" onClick={() => dispatch(loginOpen())}>회원가입/로그인</button></div>
                     <div id="menu3_divider"></div>
                     <div id="menu3_service">기업 서비스</div>
                 </div>    
             </div>
             {isHovering ? (
-            <div class="dropdown-content"
+            <div className="dropdown-content"
                 onMouseLeave={() => setIsHovering(false)}>
                 <span><StyledLink2 >직군 전체</StyledLink2></span>
                 <span onMouseOver={() => setIsHoveringContents(true)}><StyledLink2>개발</StyledLink2></span>
@@ -127,7 +125,8 @@ const Header = () => {
                                 <span><StyledLink3>VR 엔지니어</StyledLink3></span>
                                 <span><StyledLink3>루비온레일즈 개발자</StyledLink3></span>
                                 <span><StyledLink3>CIO, Chief Information </StyledLink3></span>
-                            </div>) : null};
+                            </div>) : null}
+                                
                 <span><StyledLink2>경영·비즈니스</StyledLink2></span>
                 <span><StyledLink2>마케팅·광고</StyledLink2></span>
                 <span><StyledLink2>디자인</StyledLink2></span>
@@ -150,8 +149,8 @@ const Header = () => {
         </div>): null}                      
     </div>
         
-        { modalOpen ? <JoinModal modalOpen={modalOpen} setModalOpen={setModalOpen}/> : null }
-        {searchFilter ? <Search searchFilter={searchFilter} setSearchFilter={setSearchFilter}/> : null}
+        {modalOpen > 0 ? <JoinModal /> : null }
+        {searchFilter ? <Search /> : null}
 
         <main>
             <Outlet />

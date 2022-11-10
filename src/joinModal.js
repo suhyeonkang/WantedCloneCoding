@@ -2,12 +2,14 @@ import React, {useEffect, useState} from "react";
 import { useNavigate } from "react-router-dom";
 import "./joinModal.css";
 import JoinModalForm from "./joinModalForm";
+import {useSelector, useDispatch} from 'react-redux';
+import { loginOpen, joinOpen, modalClose, searchOpen, searchClose } from "./modules/modalStore";
 
-const JoinModal = (props) => {
 
-    
-    const {modalOpen, setModalOpen} = props;
-    const [formOpen, setFormOpen] = useState(false);
+const JoinModal = () => {
+
+    const modalOpen = useSelector(state => state.modalOpen);
+    const dispatch = useDispatch();
 
     const [email, setEmail] = useState('');
     const [emailValid, setEmailValid] = useState(false);
@@ -35,25 +37,15 @@ const JoinModal = (props) => {
             setEmailValid(false);
         }
     };
-
-    
-    const closeJoinModal = () => {
-        setModalOpen(false);
-    };
-    
-    const openJoinForm = () => {
-        setFormOpen(true);
-        
-    };
-
+   
     return (
         <>
-        {modalOpen ? (
+        {modalOpen > 0  ? (
         <div class="join_modal_background" >
             <div class="join_modal">
                 <div class="join_modal_header">
                     <div><img src="img/wanted_BI_logotype.png" alt="wanted_bi"/></div>
-                    <div><button id="title_close" onClick={closeJoinModal}><img src="img/close_FILL1_wght400_GRAD0_opsz48.png" alt="close"/></button></div>
+                    <div><button id="title_close" onClick={()=> dispatch(modalClose())}><img src="img/close_FILL1_wght400_GRAD0_opsz48.png" alt="close"/></button></div>
                 </div>
             <div class="join_modal_title">
                 <h1>직장인을 위한<br/> 
@@ -79,7 +71,7 @@ const JoinModal = (props) => {
             </div>
             
             <div class="join_modal_login">
-                <button id="join_modal_loginbtn" onClick={openJoinForm} disabled={notAllow}><i class="fa fa-envelope-o" aria-hidden="true"></i> 이메일로 계속하기</button>
+                <button id="join_modal_loginbtn" onClick={()=> dispatch(joinOpen())} disabled={notAllow}><i class="fa fa-envelope-o" aria-hidden="true"></i> 이메일로 계속하기</button>
                 <p>or</p>
                 <p>다음 계정으로 계속하기</p>
             </div>
@@ -97,7 +89,7 @@ const JoinModal = (props) => {
         </div>
         ) : null }
         
-        {formOpen ? <JoinModalForm formOpen={formOpen} setFormOpen={setFormOpen} email={email} modalOpen={modalOpen} setModalOpen={setModalOpen} /> : null}
+        {modalOpen > 1 ? <JoinModalForm  email={email}  /> : null}
         </>
     )
 }
