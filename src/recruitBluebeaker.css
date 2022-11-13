@@ -51,6 +51,8 @@ table {
 
 /* main 시작 */
 
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
 .main {
     height: auto ;
     padding: 25px 0px 0px ;
@@ -58,6 +60,7 @@ table {
     flex-direction: column;
     flex-basis: 1;
     align-items: center;
+    font-family: 'Nanum Gothic', sans-serif;
     
 }
 

@@ -50,6 +50,7 @@ table {
 
 /* 시작 */
 
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
 
 
 
@@ -57,12 +58,14 @@ table {
 
 .main {
     height: 3900px ;
+    width: 100%;
     padding: 25px 0px 0px ;
     display: flex;
     flex-direction: column;
     flex-basis: 1;
     align-items: center;
-    /* border: 1px solid black; */
+    overflow-x: hidden;
+    font-family: 'Nanum Gothic', sans-serif;
     
 }
 
@@ -304,6 +307,10 @@ table {
     border: none;
 }
 
+#bookmark_btn {
+    cursor: pointer;
+}
+
 #bookmark_btn img {
     width: 16px;
     height: 14px;
@@ -315,6 +322,7 @@ table {
 }
 
 .main_contents_title h3 {
+
     margin-top: 15px;
     font-size: 22px;
     font-weight: 600;
@@ -384,25 +392,27 @@ table {
     margin-top: 40px;
 }
 
-.company1 div, .company2 div {
-    width: 250px;
-    cursor: pointer;
-}
-
-.company1, .company2 {
+#com1 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-top: 20px;
 }
 
-.company1 img, .company2 img {
+.container {
+    display: flex;
+    flex-direction: column;
     width: 250px;
+    height: 340px;
+    cursor: pointer;
+}
+
+.container div:nth-child(1) {
     height: 188px;
-    object-fit: cover;
-    object-position: top;
-    border-radius: 4px;
-    border: 1px solid #e1e2e3;
+}
+
+.container div+div {
+    height: 152px;
 }
 
 #com1 img {
@@ -414,7 +424,32 @@ table {
     border: 1px solid #e1e2e3;
 }
 
-.company1 h1, .company2 h1 {
+
+#com1 button {
+    width: 25px;
+    height: 25px;
+    position: relative;
+    left: 85%;
+    top: -185px;
+    z-index: 100;
+    cursor: pointer;
+    background-color: transparent;
+    object-fit: contain;
+    object-position: center;
+    text-align: center;
+    border: none;
+
+}
+
+#com1 button img {
+    width: 22px;
+    height: 22px;
+    border: none;
+    object-fit: contain;
+    object-position: top;
+
+}
+#com1 h1 {
     font-size: 18px;
     font-weight: 600;
     line-height: 1.2;
@@ -424,17 +459,7 @@ table {
     overflow: hidden;
 }
 
-#com1 h1, .company2 h1 {
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 1.2;
-    color: #333333;
-    margin-top: 10px;
-    word-break: break-word;
-    overflow: hidden;
-}
-
-.company1 h2, .company2 h2 {
+#com1 h2 {
     font-size: 14px;
     font-weight: 600;
     color: #333333;
@@ -442,7 +467,7 @@ table {
     margin-bottom: 5px;
 }
 
-.company1 span, .company2 span {
+#com1 span {
     font-size: 10px;
     font-weight: 600;
     color: #00aead;
@@ -454,15 +479,16 @@ table {
 
 }
 
-.company1 h3, .company2 h3 {
+#com1 h3 {
     font-size: 14px;
     font-weight: 400;
+    line-height: 14px;
     color: #999;
-    margin-top: 15px;
+    margin-top: auto;
+    padding: 10px 0px 0px 0px;
 }
 
-.company1 p, .company2 p {
-    margin-top: 10px;
+#com1 p {
     color: #333333;
     font-size: 14px;
     font-weight: 500;
