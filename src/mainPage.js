@@ -18,9 +18,9 @@ function mainPage() {
                 <div id="main_3_title">
                     <div id="main_3_subtitle">
                     <p>3분만에 읽는 Wanted+ 아티클</p>
-                    <button id="main_3_title_viewall">아티클 전체보기 ></button>
+                    <button id="main_3_title_viewall">아티클 전체보기 {'>'}</button>
                     </div>
-                    <div id="main_3_title_viewmore"><button> > </button></div>
+                    <div id="main_3_title_viewmore"><button> {'>'} </button></div>
                 </div>
                 <div id="main_3_contents">
                     <div id="m3_con1">
@@ -52,9 +52,9 @@ function mainPage() {
                 <div id="main_4_title">
                     <div id="main_4_subtitle">
                         <p>직장인을 위한 Wanted+ VOD</p>
-                        <button>VOD 전체보기 ></button>
+                        <button>VOD 전체보기 {'>'}</button>
                     </div>
-                    <div id="main_4_title_viewmore"><button> ></button></div>
+                    <div id="main_4_title_viewmore"><button> {'>'}</button></div>
                 </div>
                 <div id="main_4_contents">
                     <div id="m4_con1">
@@ -67,7 +67,7 @@ function mainPage() {
                     <div id="m4_con2">
                         <img src="https://image.wanted.co.kr/optimize?src=http%3A%2F%2Fwanted.video.kr.kollus.com%2Fkr%2Fsnapshot%2Fwanted%2F20210413%2F2%2F39565343.jpg&w=800&q=75"/>
                         <span>24:02</span>
-                        <h3>전) 원티드랩 최보명</h3>
+                        <h3>전{')'} 원티드랩 최보명</h3>
                         <h2>포트폴리오를 부탁해</h2>
                         <p>[무료] 포트폴리오를 부탁해 by 원티드</p>
                     </div>
@@ -87,7 +87,7 @@ function mainPage() {
                     </div>
                 </div>
                 <div id="main_4_recommend">
-                    <button>직군/직무를 입력하면 관련 콘텐츠를 추천해 드려요.👀 > </button>
+                    <button>직군/직무를 입력하면 관련 콘텐츠를 추천해 드려요.👀 {'>'} </button>
                 </div>
             </div>
 
@@ -95,10 +95,10 @@ function mainPage() {
                 <div id="main_5_title">
                     <div id="main_5_subtitle">
                         <p>커리어 성장을 위한 맞춤 이벤트</p>
-                        <button id="main_5_viewall">이벤트 전체보기 ></button>
+                        <button id="main_5_viewall">이벤트 전체보기 {'>'}</button>
                     </div>
                     <div id="main_5_viewmore">
-                        <button> > </button>
+                        <button> {'>'} </button>
                     </div>
                 </div>
                 <div id="main_5_contents">
@@ -140,19 +140,19 @@ function mainPage() {
                 <div id="m7_con2">
                     <div>
                         <img src="img/search_FILL0_wght400_GRAD200_opsz48.png"/>
-                        <h3>채용공고 > </h3>
+                        <h3>채용공고 {'>'} </h3>
                     </div>
                     <div>
                         <img src="img/person_FILL0_wght400_GRAD200_opsz48.png"/>
-                        <h3>내 프로필 ></h3>
+                        <h3>내 프로필 {'>'}</h3>
                     </div>
                     <div>
                         <img src="img/apartment_FILL0_wght400_GRAD200_opsz48.png"/>
-                        <h3>매치업 > </h3>
+                        <h3>매치업 {'>'} </h3>
                     </div>
                     <div>
                         <img src="img/tune_FILL0_wght400_GRAD200_opsz48.png"/>
-                        <h3>직군별 연봉 > </h3>
+                        <h3>직군별 연봉 {'>'} </h3>
                     </div>
                 </div>
             </div>

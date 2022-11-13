@@ -7,10 +7,13 @@ import { BrowserRouter, createRoutesFromChildren } from 'react-router-dom';
 import {Provider} from 'react-redux';
 import {createStore} from 'redux';
 import reducer from './modules/modalStore';
+import bookmarkReducer from './modules/bookmarkStore';
+import rootReducer from './modules/combineReducer';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-const store = createStore(reducer);
+const store = createStore(rootReducer);
+
 root.render(
   
   <BrowserRouter>
