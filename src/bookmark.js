@@ -13,7 +13,7 @@ const ShowBookmark = () => {
     const num_comma = num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     const StyledLink = styled(Link)`
-        text-decoration: none;,
+        text-decoration: none;
         StyledLink:visited{color : #333};
     `;
 
@@ -22,7 +22,8 @@ const ShowBookmark = () => {
 
     const bookMark = (e) => {
         if(select.includes(e.target.id)){
-            dispatch({type: 'bookmarkStore/bookmarkOut', id : e.target.id});   
+            dispatch({type: 'bookmarkStore/bookmarkOut', id : e.target.id});  
+            
         } else {
             dispatch({type: 'bookmarkStore/bookmarkIn', id : e.target.id}); 
         }
@@ -46,7 +47,9 @@ const ShowBookmark = () => {
                     <StyledLink to={`/developeAll/${list.id}`} key={list.id}>
                     <img src={list.mainImg} alt="" ></img>
                     </StyledLink>
-                    <button ><img src={list.bookmarkImg} onClick={bookMark} id={list.id} alt=""></img></button>
+                    <button >
+                        <img src={list.bookmarkImg} onClick={bookMark} id={list.id} alt=""></img>
+                    </button>
                 </div>
 
                 <StyledLink to={`/developeAll/${list.id}`} key={list.id}>

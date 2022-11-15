@@ -4,7 +4,7 @@ import dummyData1 from '../recruitNotice.json';
 // 액션 타입 정의
 
 const BookmarkIn = 'bookmarkStore/bookmarkIn';
-const BookmarkOut = 'booknarkStore/bookmarkOut';
+const BookmarkOut = 'bookmarkStore/bookmarkOut';
 
 // 액션 생성 함수
 
@@ -35,9 +35,9 @@ const bookmarkReducer = (state = initialstate, action) => {
             
         case BookmarkOut :
             return {
-                ...state, 
-                bookmarkList: state.bookmarkList.filter(id =>
-                    id !== action.id)};
+                bookmarkList: state.bookmarkList.filter(mark =>
+                    mark !== action.id)
+                }
         default : 
             return state;        
     }
