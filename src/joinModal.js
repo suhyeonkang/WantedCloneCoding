@@ -3,12 +3,13 @@ import { useNavigate } from "react-router-dom";
 import "./joinModal.css";
 import JoinModalForm from "./joinModalForm";
 import {useSelector, useDispatch} from 'react-redux';
-import { loginOpen, joinOpen, modalClose, searchOpen, searchClose } from "./modules/modalStore";
+import { loginOpen, joinOpen, modalClose, passwordOpen, searchOpen, searchClose } from "./modules/modalStore";
+import Password from "./password";
 
 
 const JoinModal = () => {
 
-    const modalOpen = useSelector(state => state.modalOpen);
+    const modalOpen = useSelector(state => state.reducer.modalOpen);
     const dispatch = useDispatch();
 
     const [email, setEmail] = useState('');
@@ -33,14 +34,32 @@ const JoinModal = () => {
         /^(([^<>()\[\].,;:\s@"]+(\.[^<>()\[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/i;
         if(regex.test(e.target.value)) {
             setEmailValid(true);
+            setLoginId(e.target.value);
         } else {
             setEmailValid(false);
         }
     };
+
+    const [loginId, setLoginId] = useState('');
+    let sessionStorage = window.sessionStorage;
+    const usedId = sessionStorage.getItem("Id");
+
+    const continueEmail = () => {
+        if(loginId === usedId) {
+            dispatch(passwordOpen());
+        }else {
+            dispatch(joinOpen());
+            sessionStorage.setItem("Id", loginId);
+        }
+        
+    }
+
+
+
    
     return (
         <>
-        {modalOpen > 0  ? (
+        {modalOpen === 1  ? (
         <div class="join_modal_background" >
             <div class="join_modal">
                 <div class="join_modal_header">
@@ -71,7 +90,7 @@ const JoinModal = () => {
             </div>
             
             <div class="join_modal_login">
-                <button id="join_modal_loginbtn" onClick={()=> dispatch(joinOpen())} disabled={notAllow}><i class="fa fa-envelope-o" aria-hidden="true"></i> 이메일로 계속하기</button>
+                <button id="join_modal_loginbtn" onClick={continueEmail} disabled={notAllow}><i class="fa fa-envelope-o" aria-hidden="true"></i> 이메일로 계속하기</button>
                 <p>or</p>
                 <p>다음 계정으로 계속하기</p>
             </div>
@@ -89,7 +108,8 @@ const JoinModal = () => {
         </div>
         ) : null }
         
-        {modalOpen > 1 ? <JoinModalForm  email={email}  /> : null}
+        {modalOpen === 2 ? <JoinModalForm  email={email}  /> : null}
+        {modalOpen === 3 ? <Password /> : null }
         </>
     )
 }

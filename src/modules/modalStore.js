@@ -8,14 +8,17 @@ import { Provider, useSelector, useDispatch } from "react";
 const LoginOpen = 'modalStore/LoginOpen';
 const JoinOpen = 'modalStore/JoinOpen';
 const ModalClose = 'modalStore/ModalClose';
+const PasswordOpen = 'modalStore/PasswordOpen';
 const SearchOpen = 'modalStore/SearchOpen';
 const SearchClose = 'modalStore/SearchClose';
+
 
 // 액션 생성 함수 
 
 export const loginOpen = () => ({type: LoginOpen});
 export const joinOpen = () => ({type:JoinOpen});
 export const modalClose = () => ({type:ModalClose});
+export const passwordOpen = () => ({type: PasswordOpen})
 export const searchOpen = () => ({type:SearchOpen});
 export const searchClose = () => ({type:SearchClose});
 
@@ -35,6 +38,8 @@ const reducer = (state = initialStates, action) => {
             return {...state, modalOpen: 2}
         case ModalClose :
             return {...state, modalOpen: 0}
+        case PasswordOpen :
+            return {...state, modalOpen: 3}    
         case SearchOpen :
             return {...state, searchFilter: true}
         case SearchClose :

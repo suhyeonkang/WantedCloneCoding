@@ -7,6 +7,7 @@ import styled from 'styled-components';
 import Search from "./search";
 import {useSelector, useDispatch} from 'react-redux';
 import { loginOpen, joinOpen, modalClose, searchOpen, searchClose } from "./modules/modalStore";
+import { loginStatus } from "./modules/loginStore";
 
 
 
@@ -17,34 +18,47 @@ const Header = () => {
     // 회원가입 모달창 띄우는 부분
     // 검색창 모달창 띄우는 부분
 
-    const modalOpen = useSelector(state => state.modalOpen);
-    const searchFilter = useSelector(state => state.searchFilter);
+    const modalOpen = useSelector(state => state.reducer.modalOpen);
+    const searchFilter = useSelector(state => state.reducer.searchFilter);
     const dispatch = useDispatch();
+
+    const logon = useSelector(state => state.loginReducer.logon);
+
+    const [showProfile, setShowProfile] = useState(false);
+    const profileDropdown = () => {
+        if(showProfile){
+            setShowProfile(false);
+        }else {
+            setShowProfile(true);
+        }
+    }
 
     
     // 드롭다운 메뉴 hovering
     const [isHovering, setIsHovering] = useState(0);
 
     const StyledLink = styled(Link)`
-        text-decoration: none;,
+        text-decoration: none;
         StyledLink:visited{color : #333};
     `;
 
     const StyledLink2 = styled(Link)`
+
         &:hover{color : #36f};
-        text-decoration: none;,
-        font-weight: 800;,
+        text-decoration: none;
+        font-weight: 800;
         StyledLink2:visited {color: #333};
     `;
 
     // 직군별 드롭다운 메뉴 hovering
     const [isHoveringContents, setIsHoveringContents] = useState(0);
     const StyledLink3 = styled(Link)`
-        &: hover{color: #36f};
-        text-decoration: none;,
-        font-weight: 600;,
+        &:hover{color: #36f};
+        text-decoration: none;
+        font-weight: 600;
         StyledLink3:visited {color: #333};
     `;
+
     
 
     return(
@@ -73,12 +87,28 @@ const Header = () => {
                     <div>프리랜서</div>
                     <div>AI 합격예측<em>Beta</em></div>
                 </div>
-                <div className="header_menu3">
+
+                {logon === false ? (
+                    <div className="header_menu3">
                     <div id="menu3_search" onClick={()=> dispatch(searchOpen())}><img src="/img/search_icon.png" alt=""/></div>
-                    <div id="menu3_join"><button id="menu3_join_btn" onClick={() => dispatch(loginOpen())}>회원가입/로그인</button></div>
+                    <div id="menu3_join"><button id="menu3_join_btn" onClick={()=> dispatch(loginOpen())}>회원가입/로그인</button></div>
                     <div id="menu3_divider"></div>
                     <div id="menu3_service">기업 서비스</div>
                 </div>    
+                ) : (
+                    <>
+                    <div className="header_menu3">
+                        <div id="menu3_search" onClick={()=> dispatch(searchOpen())}><img src="/img/search_icon.png" alt=""/></div>
+                        <div id="menu3_join"><img src="/img/notifications.svg" alt=""></img></div>
+                        <div id="menu3_profile"><img src="https://static.wanted.co.kr/oneid-user/profile_default.png" alt="" onClick={profileDropdown}></img></div>
+                        <div id="menu3_divider"></div>
+                        <div id="menu3_service">기업 서비스</div>
+                    </div>   
+                
+                </> 
+                )}
+
+                
             </div>
             {isHovering ? (
             <div className="dropdown-content"
@@ -146,7 +176,22 @@ const Header = () => {
                 <span><StyledLink2>건설·시설</StyledLink2></span>
                 <span><StyledLink2>공공·복지</StyledLink2></span>
                 <span><StyledLink2>프리랜서</StyledLink2></span>
-        </div>): null}                      
+        </div>): null}  
+
+        {showProfile ? (
+
+        <div className="header_menu3_profile">
+                    <div>MY 원티드</div>
+                    <div>프로필</div><hr/>
+                    <div>지원 현황</div>
+                    <div>제안받기 현황</div>
+                    <div>좋아요</div>
+                    <div>북마크</div><hr/>
+                    <div>추천</div>
+                    <div>포인트</div><hr/>
+                    <div onClick={dispatch(loginStatus())}>로그아웃</div>
+        </div>  
+        ) : null }                  
     </div>
         
         {modalOpen > 0 ? <JoinModal /> : null }

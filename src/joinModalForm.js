@@ -5,7 +5,7 @@ import { loginOpen, joinOpen, modalClose, searchOpen, searchClose } from "./modu
 
 const JoinModalForm = (props) => {
 
-    const modalOpen = useSelector(state => state.modalOpen);
+    const modalOpen = useSelector(state => state.reducer.modalOpen);
     const dispatch = useDispatch();
     const email = props.email;
     
@@ -34,6 +34,15 @@ const JoinModalForm = (props) => {
 
     const [joinNotAllow, setJoinNotAllow] = useState(true);
 
+    const [loginId, setLoginId] = useState('');
+    const [loginPw, setLoginPw] = useState('');
+    let sessionStorage = window.sessionStorage;
+
+
+    const handleEmail = e => {
+        setLoginId(e.target.value);
+        
+    }
 
     // 인증번호 유효시간 타이머 
 
@@ -86,6 +95,7 @@ const JoinModalForm = (props) => {
         setPw(e.target.value);
         if(regex_pw.test(e.target.value)){
             setPwValid(true);
+    
         }else{
             setPwValid(false);
         }
@@ -97,6 +107,7 @@ const JoinModalForm = (props) => {
         setRePw(e.target.value);
         if(pw === e.target.value){
             setMatchPwValid(true);
+            setLoginPw(e.target.value);
         }else {
             setMatchPwValid(false);
         }
@@ -163,10 +174,15 @@ const JoinModalForm = (props) => {
         handleJoin();
     }, [telNotAllow, certNotAllow, pwValid, matchPwValid, checkedAll]);
             
+    const submitForm = () => {
+        sessionStorage.setItem('Id', loginId);
+        sessionStorage.setItem('Pw', loginPw);
+        dispatch(modalClose());
+    }
     
     return (
         <>
-            {modalOpen > 1 ? ( 
+            {modalOpen === 2 ? ( 
             <div class="join_form_background">
                 <div class="join_form">
                     <div class="join_form_contents">
@@ -177,7 +193,7 @@ const JoinModalForm = (props) => {
         
                         <div class="join_form_email">
                             <span>이메일</span><br/> 
-                            <input placeholder={email} value={email} disabled="true"/>
+                            <input placeholder={email} value={email} onChange={handleEmail}disabled="true"/>
                         </div>
 
                         <div class="join_form_name">
@@ -255,7 +271,7 @@ const JoinModalForm = (props) => {
                     </div>
             
                 <div class="join_button">
-                    <button disabled={joinNotAllow}> 회원가입하기 </button>
+                    <button disabled={joinNotAllow} onClick={submitForm}> 회원가입하기 </button>
                 </div>
                 </div>    
             </div>

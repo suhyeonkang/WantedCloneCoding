@@ -2,8 +2,6 @@
 import MainSlickSlide from "./mainSlickSlide.js";
 import MainCareerInsight from "./MainCareerInsight.js";
 import "./index.css";
-import {Outlet} from 'react-router-dom';
-
 
 function mainPage() {
     return (
