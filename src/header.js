@@ -1,4 +1,4 @@
-import React, { useState, useRef} from "react";
+import React, { useState, useRef, useEffect} from "react";
 import {Outlet, Link} from "react-router-dom";
 import JoinModal from "./joinModal";
 import "./header.css";
@@ -23,15 +23,21 @@ const Header = () => {
     const dispatch = useDispatch();
 
     const logon = useSelector(state => state.loginReducer.logon);
-
     const [showProfile, setShowProfile] = useState(false);
+
     const profileDropdown = () => {
-        if(showProfile){
-            setShowProfile(false);
-        }else {
+        if(showProfile === false) {
             setShowProfile(true);
+        }else{
+            setShowProfile(false);
         }
+    };
+
+    const logout = () => {
+        dispatch(loginStatus());
+        profileDropdown();
     }
+
 
     
     // 드롭다운 메뉴 hovering
@@ -189,7 +195,7 @@ const Header = () => {
                     <div>북마크</div><hr/>
                     <div>추천</div>
                     <div>포인트</div><hr/>
-                    <div onClick={dispatch(loginStatus())}>로그아웃</div>
+                    <div onClick={logout}>로그아웃</div>
         </div>  
         ) : null }                  
     </div>

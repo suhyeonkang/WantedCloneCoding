@@ -5,7 +5,8 @@ export const loginStatus = () => ({type: LoginStatus});
 
 
 const initalStatus = {
-    logon: false
+    logon: false,
+    showProfile : false
 };
 
 const loginReducer = (state=initalStatus, action) => {

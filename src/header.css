@@ -211,7 +211,7 @@ body {
     left: 74%;
     font-size: 14px;
     color: #333;
-    font-weight: 500;
+    font-weight: 600;
     text-align: center;
     background-color: #ffffff;
     border-radius: 13px;
@@ -222,6 +222,11 @@ body {
 .header_menu3_profile div {
     width: 190px;
     padding: 12px 0px 10px 0px;
+    border-radius: 10px;
+}
+
+.header_menu3_profile div:hover {
+    background-color: #e1e2e3;
 }
 
 .header_menu3_profile hr {
