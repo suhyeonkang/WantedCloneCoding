@@ -19,7 +19,7 @@ const SearchDetail = (props) => {
 // 채용 리스트 스타일 링크 설정 
 
 const StyledLink = styled(Link)`
-        text-decoration: none;,
+        text-decoration: none;
         StyledLink:visited{color : #333};
     `;
 

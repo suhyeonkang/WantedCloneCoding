@@ -7,7 +7,7 @@ import { loginOpen, joinOpen, modalClose, searchOpen, searchClose } from "./modu
 
 const Search = () => {
 
-    const searchFilter = useSelector(state => state.searchFilter);
+    const searchFilter = useSelector(state => state.reducer.searchFilter);
     const dispatch = useDispatch();
 
     const [searchTerm, setSearchTerm] = useState("");
