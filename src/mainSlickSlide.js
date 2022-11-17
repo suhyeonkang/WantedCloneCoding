@@ -33,7 +33,7 @@ function MainSlickSlide () {
                 type="text/css"
                 href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
                 />
-            <div class="main_1">
+            <div className="main_1">
                 <Slider {...settings} >
                 <div id="main_1_slide">
                     <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F1825%2Fb93ecf4e.jpg&w=1060&q=100" alt="main_slide_img1"></img>

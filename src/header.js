@@ -45,7 +45,7 @@ const Header = () => {
 
     const StyledLink = styled(Link)`
         text-decoration: none;
-        StyledLink:visited{color : #333};
+        &:visited{color : #333};
     `;
 
     const StyledLink2 = styled(Link)`
@@ -53,7 +53,7 @@ const Header = () => {
         &:hover{color : #36f};
         text-decoration: none;
         font-weight: 800;
-        StyledLink2:visited {color: #333};
+        &:visited {color: #333};
     `;
 
     // 직군별 드롭다운 메뉴 hovering
@@ -62,7 +62,7 @@ const Header = () => {
         &:hover{color: #36f};
         text-decoration: none;
         font-weight: 600;
-        StyledLink3:visited {color: #333};
+        &:visited {color: #333};
     `;
 
     

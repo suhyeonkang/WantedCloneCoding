@@ -1,0 +1,66 @@
+{
+    "3minutes" :
+    [
+        {
+           "id": 0,
+           "img":"https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fevents%2F2427%2F9d71c6cc.jpg&w=800&q=75",
+           "title" : "애써 모셔온 시니어,우리 조직엔 안 맞는 사람?",
+           "tag" : "#HR #조직문화 #리더십"  
+        },
+        {
+            "id": 1,
+            "img":"https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fevents%2F2429%2Ffca14c2b.jpg&w=800&q=75",
+            "title" : "LG전자 | 애플에서 8년은 일하는 방법을 가르쳐 준 시간",
+            "tag" : "#개발 #IT/기술 #데이터"  
+         },
+         {
+            "id": 2,
+            "img":"https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fevents%2F2430%2Fd892e109.jpg&w=800&q=75",
+            "title" : "IP 확장 그리고 글로벌 진출로 세계 선구자가 되다",
+            "tag" : "#미디어 #콘텐츠 제작 #회사생활"  
+         },
+         {
+            "id": 3,
+            "img":"https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fevents%2F2438%2F9890601e.jpg&w=800&q=75",
+            "title" : "CX 팀 조직 구조 설계부터 채용 공고 작성법까지",
+            "tag" : "#고객서비스.리테일 #CS/CX #서비스기획"  
+         }
+    ],
+    
+    "wantedVod" :
+    [
+        {
+            "id": 0,
+            "img" : "https://image.wanted.co.kr/optimize?src=http%3A%2F%2Fwanted.video.kr.kollus.com%2Fkr%2Fsnapshot%2Fwanted%2F20210512%2F2%2F46759799.jpg&w=800&q=75",
+            "time" : "41:05",
+            "writer" : "애프터모멘트 박창선",
+            "title" : "터지는 콘텐츠는 이렇게 만듭니다 Part 2 : 독자의 마음 - 박창선",
+            "discription" : "터지는 콘텐츠는 이렇게 만듭니다 : Wanted How To"
+        },
+        {
+            "id": 1,
+            "img" : "https://image.wanted.co.kr/optimize?src=http%3A%2F%2Fwanted.video.kr.kollus.com%2Fkr%2Fsnapshot%2Fwanted%2F20210413%2F2%2F39565343.jpg&w=800&q=75",
+            "time" : "24:02",
+            "writer" : "전) 원티드랩 최보명",
+            "title" : "포트폴리오를 부탁해",
+            "discription" : "[무료] 포트폴리오를 부탁해 by 원티드"
+        },
+        {
+            "id": 2,
+            "img" : "https://image.wanted.co.kr/optimize?src=http%3A%2F%2Fwanted.video.kr.kollus.com%2Fkr%2Fsnapshot%2Fwanted%2F20210609%2F7%2F01781563.jpg&w=800&q=75",
+            "time" : "1:15:37",
+            "writer" : "노무법인미담 김동미",
+            "title" : "선택적 근로시간제의 모든 것 (주52시간제 정착 시리즈3)",
+            "discription" : "선택적 근로시간제의 모든 것 (주52시간제 정착 시리즈3) : Wanted HR Open"
+        },
+        {
+            "id": 3,
+            "img" : "https://image.wanted.co.kr/optimize?src=http%3A%2F%2Fwanted.video.kr.kollus.com%2Fkr%2Fsnapshot%2Fwanted%2F20210224%2F8%2F90123633.jpg&w=800&q=75",
+            "time" : "06:47",
+            "writer" : "원티드랩 류다현",
+            "title" : "Wanted Talk Engineering #1: 테스트 코드와 배포 시스템 - 서버 배포 방식",
+            "discription" : "(무료) 테스트 코드와 배포 시스템 : Wanted Talk Engineering #1"
+        }
+
+    ]
+}
