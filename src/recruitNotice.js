@@ -1,7 +1,8 @@
 import React, { useCallback, useEffect, useState, useRef } from "react";
 import { useNavigate, useParams, Link } from "react-router-dom";
 import {useSelector, useDispatch} from 'react-redux';
-import "./recruitNotice.css";
+// import "./recruitNotice.css";
+import "./Mediaquery.css";
 import dummyData1 from "./recruitNotice.json";
 import styled from 'styled-components';
 import { bookmarkIn } from "./modules/bookmarkStore";
@@ -18,7 +19,8 @@ const RecruitNotice = () => {
 // 적극 채용 중인 회사 더미데이터 뿌리기
     const companyContents = dummyData1["company"].map((content) => (
         <>
-        <div class="list">
+       
+        <div className="list">
             <div><img src={content.mainImg}  alt=""/></div>
             <div><img src={content.logo} alt=""/></div>
             <div>
@@ -26,6 +28,7 @@ const RecruitNotice = () => {
                 <p>{content.numPosition}</p>
             </div>
         </div>
+       
         </>
 
     ));
@@ -55,8 +58,8 @@ const bookMark = (e) => {
 // 채용 리스트 더미데이터 뿌리기
     const recruitList = dummyData1["recruitList"].map((list) => (
         <>
-        <div class="company1" id="com1">
-            <div class="container">
+        <div className="company1" id="com1">
+            <div className="container">
                 <div >
                     <StyledLink to={`/developeAll/${list.id}`} key={list.id}>
                     <img src={list.mainImg} alt="" ></img>
@@ -115,10 +118,10 @@ const bookMark = (e) => {
 
     return(
         <>
-        <div class="main">
-            <div class="main_navigator">
-                <div class="main_navigator1">
-                    <div id="main_navigator1_select">
+        <div className= "WDmain">
+            <div className= "main_navigator">
+                <div className= "main_navigator1">
+                    <div id= "main_navigator1_select">
                         <button>
                             <span>개발</span>
                             <span><img src="./img/expand_more_FILL0_wght400_GRAD0_opsz48.png" alt=""/></span>
@@ -133,28 +136,28 @@ const bookMark = (e) => {
                     </div>
                 </div>
 
-                <div class="main_navigator2">
-                    <div class="main_navigator2_select1">
+                <div className="main_navigator2">
+                    <div className="main_navigator2_select1">
                         <span>지역</span>
                         <span>한국</span>
                     </div>
-                    <div class="main_navigator2_select2">
+                    <div className="main_navigator2_select2">
                         <span>경력</span>
                         <span>전체</span>
                         <span><img src="./img/arrow_drop_down_FILL0_wght400_GRAD0_opsz48.png" alt=""/></span>
                     </div>
-                    <div class="main_navigator2_select3">
+                    <div className="main_navigator2_select3">
                         <span>기술스택</span>
                         <span><img src="./img/arrow_drop_down_FILL0_wght400_GRAD0_opsz48.png" alt=""/></span>
                     </div>
-                    <div class="main_navigator2_select4">
+                    <div className="main_navigator2_select4">
                         <span>응답률순</span>
                         <span><img src="./img/arrow_drop_down_FILL0_wght400_GRAD0_opsz48.png" alt=""/></span>
                     </div>
                 </div>
                 <hr id="main_navigator2_finishline"/>
-                <div class="main_category">
-                    <div class="main_category_detail">
+                <div className="main_category">
+                    <div className="main_category_detail">
                         <div id="detail1"><button>연봉이 최고의 복지<img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Ftags%2F634f02e0-9f6e-11ec-b909-0242ac120002.png&w=50&q=75" alt=""/></button></div>
                         <div id="detail2"><button>재택근무<img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Ftags%2F5d873f3a-9f6e-11ec-b909-0242ac120002.png&w=50&q=75" alt=""/></button></div>
                         <div id="detail3"><button>퇴사율 10% 이하<img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Ftags%2F7d3cdb3c-9f6e-11ec-b909-0242ac120002.png&w=50&q=75" alt=""/></button></div>
@@ -164,25 +167,25 @@ const bookMark = (e) => {
                         <div id="detail7"><button>50인 이상<img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Ftags%2F4cec3244-c524-11ec-901c-acde48001122.png&w=50&q=75" alt=""/></button></div>
                         <div id="detail8"><button>업력 5년 이상<img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Ftags%2F45bb9794-c524-11ec-901c-acde48001122.png&w=50&q=75" alt=""/></button></div>
                     </div>
-                    <div class="main_category_arrow">
+                    <div className="main_category_arrow">
                         <button><img src="./img/chevron_right_FILL0_wght400_GRAD0_opsz48.png" alt=""/></button>
                     </div>
                 </div>
             </div>
 
-            <div class="main_contents_wrapper">
-                <div class="main_contents_title">
+            <div className="main_contents_wrapper">
+                <div className="main_contents_title">
                     <Link to={'/bookmark'}>
                     <button id="bookmark_btn"><img src="img/bookmark.png" alt="bookmark"/>북마크 모아보기 {'>'} </button>
                     </Link>
                     <h3>적극 채용 중인 회사</h3>
                 </div>
 
-                <div class="main_contents_list">
+                <div className="main_contents_list">
                     {companyContents}
                 </div>
 
-                <div class="main_contents_company">
+                <div className="main_contents_company">
                     {recruitList}
                 </div>
                 {/* <div ref={ref}></div> */}
