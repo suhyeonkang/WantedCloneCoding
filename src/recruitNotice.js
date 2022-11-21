@@ -58,8 +58,8 @@ const bookMark = (e) => {
 // 채용 리스트 더미데이터 뿌리기
     const recruitList = dummyData1["recruitList"].map((list) => (
         <>
-        <div className="company1" id="com1">
-            <div className="container">
+        <div className= "JCcompany1" id="JCcom1">
+            <div className= "JCcontainer">
                 <div >
                     <StyledLink to={`/developeAll/${list.id}`} key={list.id}>
                     <img src={list.mainImg} alt="" ></img>
