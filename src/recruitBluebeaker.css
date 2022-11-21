@@ -3,6 +3,7 @@
    License: none (public domain)
 */
 /*  CSS Reset */
+@import 'bootstrap/dist/css/bootstrap.min.css';
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -605,7 +606,7 @@ table {
 }
 
 .place5_content1 {
-    width: auto;
+    width: 680px;
     padding: 20px 0px 0px 30px;
     height: 80px;
     border-bottom: 1px solid #e1e2e3;
@@ -658,9 +659,9 @@ table {
 }
 
 .place5_content2 {
-    width: auto;
+    width: 680px;
     padding: 13px 30px 0px;
-    display: none;
+    /* display: none; */
     background-color: #f3f5f8;
 }
 
