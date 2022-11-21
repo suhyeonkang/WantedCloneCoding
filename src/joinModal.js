@@ -41,15 +41,15 @@ const JoinModal = () => {
     };
 
     const [loginId, setLoginId] = useState('');
-    let sessionStorage = window.sessionStorage;
-    const usedId = sessionStorage.getItem("Id");
+    let localStorage = window.localStorage;
+    const usedId = localStorage.getItem("Id");
 
     const continueEmail = () => {
         if(loginId === usedId) {
             dispatch(passwordOpen());
         }else {
             dispatch(joinOpen());
-            sessionStorage.setItem('Id', loginId);
+            localStorage.setItem('Id', loginId);
         }
         
     }

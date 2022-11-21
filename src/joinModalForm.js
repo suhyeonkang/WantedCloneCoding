@@ -36,7 +36,7 @@ const JoinModalForm = (props) => {
 
     const [loginId, setLoginId] = useState('');
     const [loginPw, setLoginPw] = useState('');
-    let sessionStorage = window.sessionStorage;
+    let localStorage = window.localStorage;
 
 
     const handleEmail = e => {
@@ -175,8 +175,8 @@ const JoinModalForm = (props) => {
     }, [telNotAllow, certNotAllow, pwValid, matchPwValid, checkedAll]);
             
     const submitForm = () => {
-        sessionStorage.setItem('Id', loginId);
-        sessionStorage.setItem('Pw', loginPw);
+        localStorage.setItem('Id', loginId);
+        localStorage.setItem('Pw', loginPw);
         dispatch(modalClose());
     }
     

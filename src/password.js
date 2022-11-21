@@ -12,8 +12,8 @@ const Password = () => {
    const modalOpen = useSelector(state => state.reducer.modalOpen);
    const dispatch = useDispatch();
    
-   let sessionStorage = window.sessionStorage;
-   const pw = sessionStorage.getItem('Pw');
+   let localStorage = window.localStorage;
+   const pw = localStorage.getItem('Pw');
 
    const [confirmPw, setConfirmPw] = useState('');
 
