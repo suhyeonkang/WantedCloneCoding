@@ -396,9 +396,9 @@ const RecruitBlueBeaker = () => {
                         </div>
                     </div>
                     {/* <div class="main_contents_place5"> */}
-                        <Accordion defaultActiveKey="0" flush>
+                        <Accordion className="accordion" defaultActiveKey="0" flush>
                 
-                                <Accordion.Header>
+                                <Accordion.Header >
                                     <div class="place5_content1">
                                         <img src="/img/error_FILL0_wght400_GRAD0_opsz48.png" alt=""/>
                                         <p>본 채용정보는 원티드랩의 동의없이 무단전재, 재배포, 재가공할 수 없으며,구직활동 이외의 용도로 사용할 수 없습니다.</p>

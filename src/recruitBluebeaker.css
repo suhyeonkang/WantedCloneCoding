@@ -605,6 +605,17 @@ table {
     flex-direction: column;
 }
 
+.accordion button {
+    width: 680px;
+    background-color: #f3f5f8 ;
+}
+
+.accordion button:focus {
+    z-index: 3;
+    border-color: none;
+    box-shadow: none;
+}
+
 .place5_content1 {
     width: 680px;
     padding: 20px 0px 0px 30px;
