@@ -1,10 +1,10 @@
-# Getting Started with Create React App
+# Wanted 사이트 클론 코딩 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+JavaScript와 React 스터디를 위한 Wanted 사이트 클론 코딩 
 
-## Available Scripts
+## 폴더 구조 및 파일 설명
 
-In the project directory, you can run:
+
 
 ### `npm start`
 
