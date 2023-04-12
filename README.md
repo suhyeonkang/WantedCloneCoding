@@ -95,3 +95,21 @@ mainPage의 header에서 '개발'을 클릭하면 볼 수 있음
 
 ### `src/searchDetail.js`
 
+## 개발 과정에서 새로 공부하여 적용한 내용 
+- HTML/CSS/Styled-components를 활용한 웹 페이지 퍼블리싱
+- JavaScript로 동적 영역에 대한 기능 구현 
+- React를 새로 학습하여 적용
+- 컴포넌트 단위로 쪼개서 설계 및 개발하는 방법 학습 
+- carousel을 직접 개발하여 적용해 봄 
+- floating 배너 구현
+- 모달창 관련 기능 구현
+- Redux를 통한 전역 상태 관리
+- 중첩 Route를 적용하여 공통 레이아웃 컴포넌트를 구현
+- 카카오 map API를 연동하여 지도 반영 
+- localStorage와 sessionStorage를 학습하여 로그인/로그아웃 기능 구현
+- 모바일 버전을 고려하여 반응형 웹으로 적용
+- 부트스트랩을 학습하여 alert창, acordian에 적용해 봄 
+
+## 사용 언어 및 프레임워크
+JavaScript / React / Redux / HTML / CSS / Styled-components
+
